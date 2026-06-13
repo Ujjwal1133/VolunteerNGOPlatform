@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Volunteer Connect - Register</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<h2>🤝 Volunteer Connect</h2>
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="login.html">Login</a>
+
+<a href="ngo.html">NGOs</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="login-box">
+
+<h1>Create Account</h1>
+
+<input type="text" id="name" placeholder="Full Name">
+
+<br><br>
+
+<input type="email" id="email" placeholder="Email">
+
+<br><br>
+
+<input type="text" id="skill" placeholder="Skills (Teaching, Python etc.)">
+
+<br><br>
+
+<input type="text" id="city" placeholder="City">
+
+<br><br>
+
+<input type="password" id="password" placeholder="Password">
+
+<br><br>
+
+<button onclick="registerUser()">
+
+Register
+
+</button>
+
+<br><br>
+
+<p>
+
+Already have an account?
+
+<a href="login.html">
+
+Login Here
+
+</a>
+
+</p>
+
+</div>
+
+</section>
+
+<script>
+
+function registerUser(){
+
+let name=document.getElementById("name").value;
+let email=document.getElementById("email").value;
+let skill=document.getElementById("skill").value;
+let city=document.getElementById("city").value;
+let password=document.getElementById("password").value;
+
+if(name=="" || email=="" || skill=="" || city=="" || password==""){
+
+alert("Please fill all details!");
+
+return;
+
+}
+
+alert("Registration Successful!");
+
+window.location="dashboard.html";
+
+}
+
+</script>
+
+</body>
+
+</html>

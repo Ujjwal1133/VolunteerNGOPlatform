@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<h2>🤝 Volunteer Connect - Admin Panel</h2>
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="dashboard.html">Student</a>
+
+<a href="ngo.html">NGOs</a>
+
+<a href="login.html">Logout</a>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<h1>Administrator Dashboard</h1>
+
+<p>
+
+Manage NGOs, Volunteers and Platform Statistics
+
+</p>
+
+</section>
+
+
+
+<section class="stats">
+
+<div>
+
+<h2>520</h2>
+
+<p>Total Students</p>
+
+</div>
+
+<div>
+
+<h2>125</h2>
+
+<p>Verified NGOs</p>
+
+</div>
+
+<div>
+
+<h2>245</h2>
+
+<p>Applications</p>
+
+</div>
+
+<div>
+
+<h2>58</h2>
+
+<p>Events Completed</p>
+
+</div>
+
+</section>
+
+
+
+<section class="services">
+
+<h2>Pending NGO Verification</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Smile Foundation</h3>
+
+<p>Delhi</p>
+
+<button onclick="verifyNGO('Smile Foundation')">
+
+Verify
+
+</button>
+
+</div>
+
+
+<div class="card">
+
+<h3>Green Earth NGO</h3>
+
+<p>Noida</p>
+
+<button onclick="verifyNGO('Green Earth NGO')">
+
+Verify
+
+</button>
+
+</div>
+
+
+<div class="card">
+
+<h3>Helping Hands</h3>
+
+<p>Jaipur</p>
+
+<button onclick="verifyNGO('Helping Hands')">
+
+Verify
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="why">
+
+<h2>Recent Student Registrations</h2>
+
+<div class="cards">
+
+<div class="card">
+
+Rahul Sharma
+
+<br><br>
+
+Teaching
+
+</div>
+
+<div class="card">
+
+Priya Singh
+
+<br><br>
+
+Healthcare
+
+</div>
+
+<div class="card">
+
+Amit Kumar
+
+<br><br>
+
+Environment
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="services">
+
+<h2>Platform Reports</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Volunteer Hours</h3>
+
+<h2>12,580</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Certificates Issued</h3>
+
+<h2>480</h2>
+
+</div>
+
+<div class="card">
+
+<h3>NGO Events</h3>
+
+<h2>82</h2>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<p>
+
+© 2026 Volunteer Connect Admin Portal
+
+</p>
+
+</footer>
+
+
+
+<script>
+
+function verifyNGO(name){
+
+alert(name + " Verified Successfully!");
+
+}
+
+</script>
+
+</body>
+
+</html>
